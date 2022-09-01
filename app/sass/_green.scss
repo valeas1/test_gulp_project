@@ -1,0 +1,41 @@
+.green {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 600px;
+    padding-top: 260px;
+    padding-bottom: 40px;
+    &-wrap {
+        background-image: url('../img/green-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+            background-image: url('../img/green-bg@2x.jpg');
+        }
+    }
+    &__main {
+        width: 23%;
+        &-title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #C0C0C0;
+        }
+    }
+    &__photo-info {
+        display: flex;
+        gap: 16px;
+        margin-top: auto;
+    }
+}

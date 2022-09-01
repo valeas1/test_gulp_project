@@ -1,0 +1,57 @@
+.gear {
+    &-wrap {
+        background-image: url('../img/gear-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 50% 100%;
+        @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+            background-image: url('../img/gear-bg@2x.jpg');
+        }
+    }
+    @include dflex(flex, none, none);
+    &__left {
+        width: 50%;
+        padding-top: 173px;
+        padding-bottom: 153px;
+        &-pretitle {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #C0C0C0;
+            margin-bottom: 6px;
+        }
+        &-title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 32px;
+            color: #FFFFFF;
+            margin-bottom: 14px;
+        }
+        &-text {
+            width: 70%;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+        &-link {
+            display: inline-flex;
+        }
+    }
+    &__right {
+        width: 50%;
+        margin-top: auto;
+        padding-bottom: 40px;
+        &-photo-info {
+            display: flex;
+            justify-content: flex-end;
+            gap: 16px;
+        }
+    }
+}

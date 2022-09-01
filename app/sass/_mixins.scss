@@ -1,0 +1,5 @@
+@mixin dflex ($display, $dir, $aling) {
+    display: $display;
+    flex-direction: $dir;
+    align-items: $aling;
+}
