@@ -1,0 +1,32 @@
+.btn {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #000000;
+    text-decoration: none;
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 5px 10px 2px 5px;
+    &::before {
+        content: url(../img/shot.svg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+        width: 32px;
+        height: 32px;
+        background-color: #000000;
+        border-radius: 50%;
+        padding: 4px 2px 0 2px;
+    }
+    &:hover {
+        background: #e6e6e6;
+    }
+    &:active {
+        background: #f2f2f2;
+    }
+}
